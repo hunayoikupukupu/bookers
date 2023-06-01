@@ -1,18 +1,18 @@
 <div class="book_show">
   
   <div class="book_show_title">
-    <h4>Title:</h4>
+    <h4>Title:&nbsp;</h4>
     <span><%= @book.title %></span>
   </div>
   
   <div class="book_show_body">
-    <h4>Body:</h4>
+    <h4>Body:&nbsp;</h4>
     <span><%= @book.body %></span>
   </div>
   
 </div>
 
-<div>
+<div class="book_show_link">
   <span>
     <%= link_to "Edit", edit_book_path(@book.id) %>
   </span>

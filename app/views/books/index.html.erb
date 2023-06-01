@@ -1,44 +1,56 @@
-<h1>Books</h1>
+<div class="full_box">
 
-<div class="book_contents_heading">
-  <h4 class="book_title_heading">Title</h4>
-  <h4 class="book_body_heading">Body</h4>
-</div>
-
-
+  <h1>Books</h1>
   
-<% @books.each do |book| %>
-  <div class="book_box">
-    
-    <span class="book_title"><%= book.title %></span>
-    <span class="book_body"><%= book.body %></span>
-    <span>
-      <%= link_to "Show", book_path(book.id) %>
-    </span>
-    <span>
-      <%= link_to "Edit", edit_book_path(book.id) %>
-    </span>
-    <span>
-      <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
-    </span>
-    
-    
+  <div class="book_contents_heading">
+    <h4 class="book_title_heading">Title</h4>
+    <h4 class="book_body_heading">Body</h4>
   </div>
-<% end %>
-
-
-
-
-
-<h2>New Book</h2>
-
-<%= form_with model: @book, url: '/books', method: :post do |f| %>
-  <p>Title</p>
-  <%= f.text_field :title %>
   
-  <p>Body</p>
-  <%= f.text_area :body %>
+  <div class="main_box">
+    
+    <% @books.each do |book| %>
+      <div class="book_box">
+        
+        <scan class="book_title"><%= book.title %></scan>
+        <span class="book_body"><%= book.body %></span>
+        <span>
+          <%= link_to "Show", book_path(book.id) %>
+        </span>
+        <span>&emsp;</span>
+        <span>
+          <%= link_to "Edit", edit_book_path(book.id) %>
+        </span>
+        <span>&emsp;</span>
+        <span>
+          <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
+        </span>
+        
+        
+      </div>
+    <% end %>
   
-  <%= f.submit ' Create Book ' %>
+  </div>
+  
+  
+  
+  <div class="new_box">
+    
+    <h2 class="new_heading">New Book</h2>
+    
+    <%= form_with model: @book, url: '/books', method: :post do |f| %>
+      <p>Title</p>
+      <%= f.text_field :title %>
+      
+      <div class="new_body">
+        <p>Body</p>
+        <%= f.text_area :body %>
+      </div>
+      
+      <p><%= f.submit ' Create Book ' %></p>
+    
+    <% end %>
+  
+  </div>
 
-<% end %>
+</div>

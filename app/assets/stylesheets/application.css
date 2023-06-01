@@ -29,12 +29,48 @@
   line-height: 60px;
 }
 
+.full_box {
+  margin: 30px; 
+}
+
 .book_contents_heading {
+  display: flex;
+  margin-top: 15px;
+}
+
+.book_title_heading {
+  width: 200px;
+  text-align: center;
+}
+
+.book_body_heading {
+  width: 400px;
+  text-align: center;
+}
+
+.main_box {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.book_box {
   display: flex;
 }
 
+.book_title {
+  width: 200px;
+}
+
 .book_body {
-  color: red;
+  width: 400px;
+}
+
+.new_heading {
+  margin-bottom: 10px;
+}
+
+.new_body {
+  margin: 5px 0;
 }
 
 .book_show {
@@ -48,4 +84,16 @@
 
 .book_show_body {
   display: flex;
+}
+
+.book_show_link {
+  padding: 20px;
+}
+
+.edit_box {
+  margin: 10px 0;
+}
+
+.edit_body {
+  margin: 5px 0;
 }
