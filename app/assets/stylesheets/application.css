@@ -33,6 +33,12 @@
   margin: 30px; 
 }
 
+.index_flash_message {
+  color: green;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
 .book_contents_heading {
   display: flex;
   margin-top: 15px;
@@ -75,6 +81,11 @@
 
 .book_show {
   padding: 40px 60px;
+}
+
+.flash_message {
+  color: green;
+  margin-bottom: 30px;
 }
 
 .book_show_title {
