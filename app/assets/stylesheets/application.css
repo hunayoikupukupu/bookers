@@ -39,36 +39,26 @@
   padding-bottom: 30px;
 }
 
-.book_contents_heading {
-  display: flex;
-  margin-top: 15px;
-}
-
-.book_title_heading {
-  width: 200px;
-  text-align: center;
-}
-
-.book_body_heading {
-  width: 400px;
-  text-align: center;
-}
-
-.main_box {
+.book_table {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.book_box {
-  display: flex;
+.error_box {
+  border: solid red;
+  width: 405px;
+  margin-bottom: 20px;
 }
 
-.book_title {
-  width: 200px;
-}
-
-.book_body {
+.error_heading {
   width: 400px;
+  background-color: red;
+  color: white;
+}
+
+.error_message {
+  background-color: #eee;
+  padding: 30px 60px;
 }
 
 .new_heading {

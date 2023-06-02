@@ -2,6 +2,23 @@
   
   <h1>Editing Book</h1>
   
+    <% if @book.errors.any? %>
+      <div class="error_box">
+      
+        <div class="error_heading">
+          &emsp;<%= @book.errors.count %> error prohibited this book from being saved:
+        </div> 
+        
+        <div class="error_message">
+          <ul>
+            <% @book.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+  
   <div class="edit_box">
     
     <%= form_with model: @book do |f| %>
